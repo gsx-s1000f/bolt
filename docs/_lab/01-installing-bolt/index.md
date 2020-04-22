@@ -8,15 +8,28 @@ In this exercise you will install Bolt and create a Bolt project directory so yo
 
 ## Installing Bolt
 
+```
 Bolt is packaged for the major operating systems. Please refer to the [installation documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html) to install Bolt for the OS you are using. 
-Boltには、メジャーどころのOS向けにパッケージがあります。お使いのOSにインストールするには、[installation documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html) を参考にしてください。
+```
 
-**Note** For this lab and for most use cases it is recommended that bolt is NOT installed as a Ruby Gem. This is because optional (but highly useful) supporting modules are only included in packages and must be installed manually when using the Gem.
+Boltには、メジャーどころのOS向けのパッケージがあります。お使いのOSにインストールするには、[installation documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html) を参考にしてください。
+
+**Note** 
+```
+For this lab and for most use cases it is recommended that bolt is NOT installed as a Ruby Gem. This is because optional (but highly useful) supporting modules are only included in packages and must be installed manually when using the Gem.
+```
+
+このラボやよくあるユースケースでは、Ruby Gem形式ではインストール**しない**ことをおすすめします。なぜならオプション（しかしとても有用な）サポートモジュールはパッケージにのみ含まれており、Gemを使用した場合はマニュアルインストールしなければならないからです。
 
 ## Creating a Bolt Project Directory
 
+```
 By default `$HOME/.puppetlabs/bolt/` is the base directory for user-supplied data such as the configuration and inventory files. It is effectively the default Bolt project directory. 
 You may find it useful to maintain a project specific Bolt project directory. When you commit a Bolt project directory to a project you can share Bolt configuration and code between users.
+```
+
+デフォルトでは、'$HOME/.puppetlabs/bolt'が、ユーザー提供データやイベントリファイルを格納するベースディレクトリとなります。事実上、デフォルトのBolt project ディレクトリです。
+プロジェクト固有のBolt project directoryを定義するのが有用なこともあるかもしれません。しかしBolt project directoryに格納していれば、Boltの設定やコードをシェアすることができます。
 
 Bolt treats a directory containing a subdirectory called `Boltdir` as a project directory, and will traverse parents of the current directory until it finds a directory containing a `Boltdir`. You can read the official documentation to learn more about additional [types of project directories](https://puppet.com/docs/bolt/latest/bolt_project_directories.html#project-directory-types).
 
