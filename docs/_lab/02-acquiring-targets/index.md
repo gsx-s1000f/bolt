@@ -4,7 +4,11 @@ difficulty: Basic
 time: Approximately 5 minutes
 ---
 
+```
 In this exercise you will create targets that you can use to experiment with Bolt. You can also use existing targets in your system if you prefer.
+```
+
+この演習では、Boltの実験をするのに使えるtargetを作成します。何ならシステム内の既存のtargetを試用することもできます。
 
 - [Existing Targets](#existing-targets)
 - [Using Vagrant](#using-vagrant)
