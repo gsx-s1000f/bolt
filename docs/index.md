@@ -1,5 +1,5 @@
 ---
-title: Bolt Hands-on Lab
+title: Bolt Hands-on Lab（に、変な和訳をつける）
 ---
 
 **＜訳注＞
