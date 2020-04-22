@@ -31,7 +31,11 @@ You may find it useful to maintain a project specific Bolt project directory. Wh
 デフォルトでは、'$HOME/.puppetlabs/bolt'が、ユーザー提供データやイベントリファイルを格納するベースディレクトリとなります。事実上、デフォルトのBolt project ディレクトリです。
 プロジェクト固有のBolt project directoryを定義するのが有用なこともあるかもしれません。しかしBolt project directoryに格納していれば、Boltの設定やコードをシェアすることができます。
 
+```
 Bolt treats a directory containing a subdirectory called `Boltdir` as a project directory, and will traverse parents of the current directory until it finds a directory containing a `Boltdir`. You can read the official documentation to learn more about additional [types of project directories](https://puppet.com/docs/bolt/latest/bolt_project_directories.html#project-directory-types).
+```
+
+Boltは`Boltdir`というサブディレクトリを持つディレクトリををプロジェクトディレクトリとして扱います。そして、`Boltdir` を含むディレクトリが見つかるまでカレントディレクトリの親ディレクトリをたどっていきます。追加の公式ドキュメントで更に学ぶことができます。 [types of project directories]
 
 To get started, create a directory called `Boltdir` within your project directory. Within the `Boltdir` you should also create a `modules/` subdirectory, which holds modules from the Puppet Forge and code repositories, and a `site-modules/` subdirectory, which holds project-specific modules. These two subdirectories are where Bolt will look for tasks, plans, and manifests.
 
