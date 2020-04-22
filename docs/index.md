@@ -2,6 +2,12 @@
 title: Bolt Hands-on Lab
 ---
 
+**＜訳注＞
+自分で動かいしていてよくわからないところに、超意訳で訳をつけていきます。
+忙しかったり飽きたりしたら止まります。
+訳が間違っていることにより何らかの問題が発生しても、当方は一切責任を負いかねますので、良しなにお願いします。**
+
+
 ## Introduction
 
 Bolt is an open source orchestration tool that automates the manual work it takes to maintain your infrastructure. Use Bolt to automate tasks that you perform on an as-needed basis or as part of a greater orchestration workflow. For example, you can use Bolt to patch and update systems, troubleshoot servers, deploy applications, or stop and restart services. Bolt can be installed on your local workstation and connects directly to remote nodes with SSH or WinRM, so you are not required to install any agent software.
