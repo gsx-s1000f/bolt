@@ -4,9 +4,7 @@ difficulty: Basic（基本）
 time: Approximately 5 minutes
 ---
 
-```
-In this exercise you will create targets that you can use to experiment with Bolt. You can also use existing targets in your system if you prefer.
-```
+>> In this exercise you will create targets that you can use to experiment with Bolt. You can also use existing targets in your system if you prefer.
 
 この演習では、Boltの実験に使えるtargetを作成します。何ならシステム内の既存のtargetを試用することもできます。
 
@@ -17,18 +15,19 @@ In this exercise you will create targets that you can use to experiment with Bol
 
 ## Prerequisites（前提条件）
 
-```
-To use an attached configuration file to set up test targets, you must have one of the following installed on your machine:
-```
+>> To use an attached configuration file to set up test targets, you must have one of the following installed on your machine:
+
 添付の設定を使用してテストターゲットを設定するには、以下のいずれかをインストールしている必要があります。
 
 - [Vagrant](https://www.vagrantup.com/)
 - [Docker for Mac](https://docs.docker.com/docker-for-mac/install/)
 - [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-## Existing Targets
+## Existing Targets（既存のターゲット）
 
-If you already have, or can easily launch, a few Linux or Windows targets then you're all set. These targets must be accessible via SSH or WinRM; if you can  access them via an SSH or WinRM client then Bolt can, too.
+>> If you already have, or can easily launch, a few Linux or Windows targets then you're all set. These targets must be accessible via SSH or WinRM; if you can  access them via an SSH or WinRM client then Bolt can, too.
+
+すでにLinuxやWindowsのターゲットを持っていたりすぐに実行できる状態にあるなら、すべての設定は完了しています。これらのターゲットは、SSH或いはWinRM経由で接続する必要があります。SSH或いはWinRMによる接続設定ができているならBoltもまた接続可能です。
 
 ## Using Vagrant
 **Note:** These instructions assume that you are familiar with Vagrant and have a suitable hypervisor configured.
