@@ -4,33 +4,46 @@ difficulty: Basic
 time: Approximately 5 minutes
 ---
 
-You can use Bolt to run arbitrary commands on a set of remote hosts. Let's see that in practice before we move on to more advanced features. Choose the exercise based on the operating system of your test targets.
+
+> You can use Bolt to run arbitrary commands on a set of remote hosts. Let's see that in practice before we move on to more advanced features. Choose the exercise based on the operating system of your test targets.
+
+Boltを使ってリモートホスト上でコマンドを実行することができます。より高度な機能に移る前に、実践してみてみましょう。テスト対象のOSに基づいた演習を選択してください。
 
 - [Running Shell Commands on Linux Targets](#running-shell-commands-on-linux-targets)
 - [Running PowerShell Commands on Windows Targets](#running-powershell-commands-on-windows-targets)
 
-## Prerequisites
+## Prerequisites（前提条件）
+```
 Complete the following before you start this lesson:
+```
+レッスンを始める前に、以下を完了させてください。：
 
 - [Installing Bolt](../01-installing-bolt)
 - [Setting Up Test Targets](../02-acquiring-targets)
 
 ## Running Shell Commands on Linux Targets
 
-Bolt by default uses SSH for transport. If you can connect to systems remotely, you can use Bolt to run shell commands. It reuses your existing SSH configuration for authentication, which is typically provided in `~/.ssh/config`.
+> Bolt by default uses SSH for transport. If you can connect to systems remotely, you can use Bolt to run shell commands. It reuses your existing SSH configuration for authentication, which is typically provided in `~/.ssh/config`.
 
-To run a command against a remote Linux target, use the following command syntax:
+BoltはデフォルトでSSH転送を使用します。もしシステムにリモート接続できれば、Boltでシェルコマンドを実行できます。通常は`~/.ssh/config`に設定されている、既存のSSH認証設定を使用します。
+
+> To run a command against a remote Linux target, use the following command syntax:
+
+リモートのLinuxでコマンドを実行するには、次のコマンドを使用します。:
 ```shell
 bolt command run <command> --targets <targets>
 ```
 
-To run a command against a remote target using a username and password rather than keys use the following syntax:
+
+> To run a command against a remote target using a username and password rather than keys use the following syntax:
+
+リモートのターゲットに対して、Keyではなくユーザー名とパスワードでコマンドを実行するには、次のコマンドを使用します。:
 ```shell
 bolt command run <command> --targets <targets> --user <user> --password <password>
 ```
-
+~~~
 Run the `uptime` command to view how long the system has been running. If you are using existing targets on your system, replace `target1` with the address for your target.
-
+~~~
 ```shell
 bolt command run uptime --targets target1
 ```
