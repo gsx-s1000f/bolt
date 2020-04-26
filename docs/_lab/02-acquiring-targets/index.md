@@ -1,6 +1,6 @@
 ---
 title: Setting Up Test Targets
-difficulty: Basic
+difficulty: Basic（基本）
 time: Approximately 5 minutes
 ---
 
@@ -8,15 +8,19 @@ time: Approximately 5 minutes
 In this exercise you will create targets that you can use to experiment with Bolt. You can also use existing targets in your system if you prefer.
 ```
 
-この演習では、Boltの実験をするのに使えるtargetを作成します。何ならシステム内の既存のtargetを試用することもできます。
+この演習では、Boltの実験に使えるtargetを作成します。何ならシステム内の既存のtargetを試用することもできます。
 
 - [Existing Targets](#existing-targets)
 - [Using Vagrant](#using-vagrant)
 - [Using Docker](#using-docker)
 - [Creating an Inventory File](#creating-an-inventory-file)
 
-## Prerequisites
+## Prerequisites（前提条件）
+
+```
 To use an attached configuration file to set up test targets, you must have one of the following installed on your machine:
+```
+添付の設定を使用してテストターゲットを設定するには、以下のいずれかをインストールしている必要があります。
 
 - [Vagrant](https://www.vagrantup.com/)
 - [Docker for Mac](https://docs.docker.com/docker-for-mac/install/)
