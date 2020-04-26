@@ -37,10 +37,16 @@ Bolt treats a directory containing a subdirectory called `Boltdir` as a project 
 
 Boltは`Boltdir`というサブディレクトリを持つディレクトリをプロジェクトディレクトリとして扱います。そして、`Boltdir` を含むディレクトリが見つかるまでカレントディレクトリの親ディレクトリをたどっていきます。追加の公式ドキュメントで更に学ぶことができます。 [types of project directories](https://puppet.com/docs/bolt/latest/bolt_project_directories.html#project-directory-types)
 
-
+```
 To get started, create a directory called `Boltdir` within your project directory. Within the `Boltdir` you should also create a `modules/` subdirectory, which holds modules from the Puppet Forge and code repositories, and a `site-modules/` subdirectory, which holds project-specific modules. These two subdirectories are where Bolt will look for tasks, plans, and manifests.
+```
+はじめるにあたって、プロジェクトディレクトリの中に`Boltdir`というディレクトリを作ってください。`Boltdir`の中には、Puppet Forgeやコードリポジトリから取得したモジュールを格納する`modules/`と、プロジェクト固有のモジュールを格納する`site-modules/`を作成してください。これら二つのサブディレクトリは、Boltがタスク、プラン、マニフェストを探しに行くサブディレクトリです。
 
+```
 If you are using the [files included with this lab](https://github.com/puppetlabs/bolt/tree/master/docs/_includes) your project directory will end up looking like:
+```
+
+もし、[files included with this lab](https://github.com/puppetlabs/bolt/tree/master/docs/_includes)を使用するのであれば、プロジェクトディレクトリは以下の様になります。：
 
 ```
 lesson1-10/
@@ -58,6 +64,10 @@ lesson1-10/
 
 ## Next Steps
 
+```
 Now that you have Bolt installed and have created a Bolt project directory you can move on to:
+```
+
+今、あなたはBoltをインストールし、プロジェクトディレクトリも作成しました。次へ進みましょう。（※超意訳）
 
 [Setting Up Test Targets](../02-acquiring-targets)
