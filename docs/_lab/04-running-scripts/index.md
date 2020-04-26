@@ -4,7 +4,9 @@ difficulty: Basic
 time: Approximately 5 minutes
 ---
 
-In this exercise you will run existing scripts against remote targets using Bolt.
+>> In this exercise you will run existing scripts against remote targets using Bolt.
+
+この演習では、Bolt を使用してリモートターゲットに対して既存のスクリプトを実行します。
 
 - [Test Linux Targets for ShellShock](#test-linux-targets-for-shellshock)
 - [Test Windows External Connectivity](#test-windows-external-connectivity)
