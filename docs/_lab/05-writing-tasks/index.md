@@ -4,7 +4,9 @@ difficulty: Basic
 time: Approximately 15 minutes
 ---
 
-In this exercise you will write your first Bolt Tasks for use with Bolt. 
+>> In this exercise you will write your first Bolt Tasks for use with Bolt. 
+
+この演習では、最初のBoldタスクを書いてみましょう。
 
 - [How Do Tasks Work?](#how-do-tasks-work)
 - [Write Your First Task in Bash](#write-your-first-task-in-bash)
