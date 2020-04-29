@@ -35,7 +35,9 @@ Run the [bashcheck](https://github.com/hannob/bashcheck) script to check on Shel
 curl -O https://raw.githubusercontent.com/puppetlabs/bolt/master/docs/_includes/lesson1-10/src/bashcheck.sh
 ```
 
-Run the script using the command `bolt script run <script-name>`. This uploads the script to the targets you have specified, ensures it's executable, runs it, and returns output to the console.
+>> Run the script using the command `bolt script run <script-name>`. This uploads the script to the targets you have specified, ensures it's executable, runs it, and returns output to the console.
+
+`bolt script run <script-name>`コマンドでスクリプトを実行します。この指定したターゲットにアップロードしたスクリプトは、実行可能であることを確認し、実行し、コンソールに出力します。
 
 ```shell
 bolt script run bashcheck.sh --targets target1
@@ -61,19 +63,27 @@ Successful on 1 target: target1
 Ran on 1 target in 0.89 seconds
 ```
 
-## Test Windows External Connectivity
+## Test Windows External Connectivity（Windows外部接続テスト）
 
-Create a simple PowerShell script to test connectivity to a known website.
+>> Create a simple PowerShell script to test connectivity to a known website.
+
+簡単なPowerShellで、既知のウェブサイトへの接続テストを行うスクリプトを作成します。
 
 **Tip:** You likely already have a set of scripts that you run to accomplish common systems administration tasks. Bolt makes it easy to reuse your scripts without modification and to run them quickly across a large number of targets. Feel free to replace the script in this exercise with one of your own.
 
-Save the following as `testconnection.ps1`:
+**ヒント:** あなたは既にシステム管理タスク上のよくあるタスクを解決するスクリプトを持っている可能性が高いです。Boltは簡単に改修なしで採用することができ、多数のターゲットに対し迅速に実行することができます。この演習で使用するスクリプトをあなた自身の者に置き換えてみてください。
+
+>> Save the following as `testconnection.ps1`:
+
+以下を`testconnection.ps1`という名前で保存してください。
 
 ```powershell
 {% include lesson1-10/src/testconnection.ps1 -%}
 ```
 
-Run the script using the command `bolt script run <script-name>`. This uploads the script to the targets you have specified, ensures it's executable, runs it, and returns output to the console.
+>> Run the script using the command `bolt script run <script-name>`. This uploads the script to the targets you have specified, ensures it's executable, runs it, and returns output to the console.
+
+`bolt script run <script-name>`コマンドでスクリプトを実行します。この指定したターゲットにアップロードしたスクリプトは、実行可能であることを確認し、実行し、コンソールに出力します。
 
 ```shell
 bolt script run src/testconnection.ps1 --targets windows
