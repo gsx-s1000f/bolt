@@ -69,7 +69,7 @@ Ran on 1 target in 0.89 seconds
 
 簡単なPowerShellで、既知のウェブサイトへの接続テストを行うスクリプトを作成します。
 
-**Tip:** You likely already have a set of scripts that you run to accomplish common systems administration tasks. Bolt makes it easy to reuse your scripts without modification and to run them quickly across a large number of targets. Feel free to replace the script in this exercise with one of your own.
+>>**Tip:** You likely already have a set of scripts that you run to accomplish common systems administration tasks. Bolt makes it easy to reuse your scripts without modification and to run them quickly across a large number of targets. Feel free to replace the script in this exercise with one of your own.
 
 **ヒント:** あなたは既にシステム管理タスク上のよくあるタスクを解決するスクリプトを持っている可能性が高いです。Boltは簡単に改修なしで採用することができ、多数のターゲットに対し迅速に実行することができます。この演習で使用するスクリプトをあなた自身の者に置き換えてみてください。
 
