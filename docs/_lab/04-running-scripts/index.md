@@ -89,7 +89,9 @@ Ran on 1 target in 0.89 seconds
 bolt script run src/testconnection.ps1 --targets windows
 ```
 
-The result:
+>>The result:
+
+結果:
 
 ```
 Started on localhost...
