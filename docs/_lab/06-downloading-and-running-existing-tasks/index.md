@@ -16,11 +16,15 @@ Complete the following before you start this lesson:
 - [Running Commands](../03-running-commands)
 - [Running Scripts](../04-running-scripts)
 
-## Inspect Installed Tasks
+## Inspect Installed Tasks （インストール済みTaskの検査）
 
-Bolt is packaged with useful modules and task content.
+>> Bolt is packaged with useful modules and task content.
 
-Run the `bolt task show` command to view a list of the tasks installed in the project directory.
+Boltには便利なmoduleとTaskがパッケージされています。
+
+>> Run the `bolt task show` command to view a list of the tasks installed in the project directory.
+
+`bolt task show`コマンドをを実行するとプロジェクトディレクトリにインストールされたタスクのリストを表示します。
 
 ```shell
 bolt task show

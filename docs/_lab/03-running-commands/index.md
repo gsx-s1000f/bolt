@@ -62,7 +62,7 @@ Ran on 1 target in 0.42 seconds
 
 >> > **Tip:** If you receive the error `Host key verification failed` make sure the correct host keys are in your `known_hosts` file, set `StrictHostKeyChecking=no` in your SSH config, or pass `--no-host-key-check` to future Bolt commands.
 
-**ヒント:** もし`Host key verification failed`エラーが返った場合は、`known_hosts` ファイルに正しいホスト鍵があることを確認するか、SSH 設定で `StrictHostKeyChecking=no` を設定するか、将来の Bolt コマンドに `--no-host-key-check` を渡すようにしてください。（※訳注：ここはよくわからない…）
+**ヒント:** もし`Host key verification failed`エラーが返った場合は、`known_hosts` ファイルに正しいホスト鍵があることを確認するか、SSH 設定で `StrictHostKeyChecking=no` を設定するか、将来の Bolt コマンドに `--no-host-key-check` を渡すようにしてください。（※訳注：ここはよくわからない…`--no-host-key-check`で動く様になったのでこのオプションをつけろという意味なのだろう…）
 
 >> Run the 'uptime' command on multiple targets by passing a comma-separated list. If you are using existing targets on your system, replace `target1,target2,target3` with addresses for your targets.
 
